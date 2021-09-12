@@ -1,0 +1,34 @@
+git config --global user.name "BLUECALF"
+git config --global user.email "leonardxxxx.gmail.com"
+git config --list
+
+git init                //makes a .git file that will hold all files that need tracking
+
+git status               //shows status of the git file.
+
+git add .                //adds all files to the .git
+
+git log                  //shows all git file commited to be tracked
+
+git commit -m "setup"    //makes commit to the master branch
+
+git status               //
+
+git log 		//will show the commits to the master branch or any branch and author and time.
+
+git remote -v		//shows url of remote repositories you can push or cloneore recive projects from
+
+git remote add origin "repository_url_pasted_here_from_github"     //adds a remote url repository.plz make repository at github.
+
+git remote -v
+
+git push origin master                //pushes or uploads your .git file to remote repository asks you for username.
+
+username :                     //enter github username
+password :                     //this is not password.use personal acess token
+
+
+git branch -a                 //shows directory or tree that you are on and have power eg "master"\
+
+
+git clone type_url_of_remote_repository_here             //this downloads the project and pastes in this directory that opened git

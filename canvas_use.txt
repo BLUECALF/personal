@@ -1,0 +1,37 @@
+to make a canvas aided graphical app you must :-
+
+1. MainActivity should extend Activity
+
+2. content view should be changed to "your custom view" setContentView(new myview(this);
+
+3.// my view constructor should have  super(context);
+
+4.one should aso use threads to "update>>draw to canvas"
+
+5 thread should draw to canvas 
+	 to draw it needs  "surfaceholder,canvas,draw functionfrom playerview or gameview class"
+
+canvas is not passed down. the thread shoukd have its own canvas.
+
+
+6 at the thread we overide the run method.
+
+// we make an in finite while looop which is the main game update and render loop
+
+
+7 at our custom view " our view " we make an instance of the game thread.
+	set running to true.
+	start the thread.
+	
+8 at the thread run method.
+	 we check if surface is valid;
+	we lock the canvas 
+we draw to the canvas 
+we unlock canvas and post view to the screen.
+
+9. set screen orientation to landscape in manifest.xml
+<activity
+   android:screenOrientation="landscape"
+   android:configChanges="orientation|keyboardHidden">
+</activity>
+
